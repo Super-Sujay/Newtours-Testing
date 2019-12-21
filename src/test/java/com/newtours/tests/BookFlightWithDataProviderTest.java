@@ -76,7 +76,7 @@ public class BookFlightWithDataProviderTest extends BaseTest {
 		System.out.println("The Total Price (including taxes) is [" + MercuryPurchase2Page.totalPrice.getText() + "]");
 		ScreenShot.takeScreenShot("Flight Confirmation");
 		MercuryPurchase2Page.logOut.click();
-		Assert.assertTrue(MercurySignOnPage.signOnBanner.isPresent(), "Unable to Log Off.");
+		Assert.assertFalse(MercurySignOnPage.signOnBanner.isPresent(), "Unable to Log Off.");
 	}
 
 	@Test(description = "This is the first test method", dataProvider = "CsvDataProvider", dataProviderClass = CsvDataProvider.class)
