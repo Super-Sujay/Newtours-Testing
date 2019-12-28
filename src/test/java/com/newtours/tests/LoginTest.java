@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
 		MercurySignOnPage.login();
 		Assert.assertTrue(MercuryReservationPage.flightFinderBanner.isPresent(), "Unable to Log In");
 		MercurySignOnPage.signOff();
-		Assert.assertTrue(MercurySignOnPage.signOnBanner.isPresent(), "Unable to Log Off");
+		Assert.assertTrue(MercurySignOnPage.signOnBanner.isPresent(), "Unable to Log Off the website");
 	}
 
 }
